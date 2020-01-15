@@ -1,6 +1,9 @@
 package `in`.umbrella.cars.data.repository
 
 
+import `in`.umbrella.cars.data.model.DataResult
+import `in`.umbrella.cars.data.network.ApiDisposable
+import `in`.umbrella.cars.data.network.ApiError
 import `in`.umbrella.cars.data.network.ApiService
 import android.util.Log
 import io.reactivex.Observable
@@ -15,10 +18,26 @@ class AppRepoImp(
 ) : AppRepository {
 
     private val TAG = AppRepoImp::class.java.simpleName
+    override fun GetDataRep(
+        country: String,
+        success: (DataResult) -> Unit,
+        failure: (ApiError) -> Unit,
+        treminate: () -> Unit
+    ): Disposable {
+        return apiService.GetData()
+            .subscribeOn(Schedulers.io())
+            .observeOn(AndroidSchedulers.mainThread())
+            .doOnTerminate(treminate)
+            .subscribeWith(
+                ApiDisposable(
+                success = {
+                    success(it)
+                },
+                failure = failure
+            )
 
-
-
-
+            )
+    }
 
 
 }

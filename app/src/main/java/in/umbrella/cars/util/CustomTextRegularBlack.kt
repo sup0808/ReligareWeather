@@ -1,5 +1,6 @@
-package `in`.religareweather.com.util
-import `in`.religareweather.com.R
+package `in`.umbrella.cars.util
+
+import `in`.umbrella.cars.R
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.res.TypedArray

@@ -1,9 +1,10 @@
 package `in`.umbrella.cars.di.module
 
-import `in`.religareweather.com.core.Config
-import `in`.religareweather.com.data.network.ApiService
-import `in`.religareweather.com.data.repository.AppRepoImp
-import `in`.religareweather.com.data.repository.AppRepository
+
+import `in`.umbrella.cars.core.Config
+import `in`.umbrella.cars.data.network.ApiService
+import `in`.umbrella.cars.data.repository.AppRepoImp
+import `in`.umbrella.cars.data.repository.AppRepository
 import com.google.gson.Gson
 import dagger.Module
 import dagger.Provides

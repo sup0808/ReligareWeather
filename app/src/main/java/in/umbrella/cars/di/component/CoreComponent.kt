@@ -1,10 +1,11 @@
 package `in`.umbrella.cars.di.component
 
-import `in`.religareweather.com.core.App
-import `in`.religareweather.com.di.builder.ActivityBuilder
-import `in`.religareweather.com.di.module.ContextModule
-import `in`.religareweather.com.di.module.DataBaseModule
-import `in`.religareweather.com.di.module.NetworkModule
+
+import `in`.umbrella.cars.core.App
+import `in`.umbrella.cars.di.builder.ActivityBuilder
+import `in`.umbrella.cars.di.module.ContextModule
+import `in`.umbrella.cars.di.module.DataBaseModule
+import `in`.umbrella.cars.di.module.NetworkModule
 import android.app.Application
 import dagger.BindsInstance
 import dagger.Component

@@ -1,6 +1,7 @@
 package `in`.umbrella.cars.di.module
 
-import `in`.religareweather.com.di.builder.ViewModelBuilder
+
+import `in`.umbrella.cars.di.builder.ViewModelBuilder
 import android.app.Application
 import android.content.Context
 import dagger.Module

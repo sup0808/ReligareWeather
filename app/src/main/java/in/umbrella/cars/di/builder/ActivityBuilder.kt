@@ -1,7 +1,8 @@
 package `in`.umbrella.cars.di.builder
 
 
-import `in`.religareweather.com.ui.LoadScreen
+
+import `in`.umbrella.cars.MainActivity
 
 
 import dagger.Module
@@ -13,6 +14,6 @@ abstract class ActivityBuilder {
 
 
 
-    @ContributesAndroidInjector(modules = [LoadScreenFragmentProviders::class])
-    abstract fun bindLoadScreen(): LoadScreen
+    @ContributesAndroidInjector
+    abstract fun bindMainActivity(): MainActivity
 }

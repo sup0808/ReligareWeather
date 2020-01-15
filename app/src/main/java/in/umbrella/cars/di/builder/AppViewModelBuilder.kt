@@ -1,10 +1,8 @@
 package `in`.umbrella.cars.di.builder
 
 
-import `in`.religareweather.com.di.qualifier.ViewModelKey
-
-
-import `in`.religareweather.com.ui.loadScreen.LoadViewModel
+import `in`.umbrella.cars.di.qualifier.ViewModelKey
+import `in`.umbrella.cars.ui.HomeScreen.HomeViewModel
 import androidx.lifecycle.ViewModel
 import dagger.Binds
 import dagger.Module
@@ -16,8 +14,8 @@ import dagger.multibindings.IntoMap
 abstract class AppViewModelBuilder {
     @Binds
     @IntoMap
-    @ViewModelKey(LoadViewModel::class)
-    abstract fun bindLoadViewModel(loadViewModel: LoadViewModel): ViewModel
+    @ViewModelKey(HomeViewModel::class)
+    abstract fun bindLoadViewModel(loadViewModel: HomeViewModel): ViewModel
 
 
 }

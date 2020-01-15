@@ -1,6 +1,7 @@
 package `in`.umbrella.cars.core
 
 
+import `in`.umbrella.cars.di.component.DaggerCoreComponent
 import android.content.Context
 import androidx.multidex.MultiDex
 
