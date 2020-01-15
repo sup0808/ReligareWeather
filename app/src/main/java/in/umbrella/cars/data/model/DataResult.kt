@@ -1,6 +1,5 @@
 package `in`.umbrella.cars.data.model
 
-import com.google.gson.annotations.SerializedName
 
 data class DataResult(
 
