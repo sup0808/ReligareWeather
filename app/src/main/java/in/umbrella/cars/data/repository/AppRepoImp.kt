@@ -19,7 +19,6 @@ class AppRepoImp(
 
     private val TAG = AppRepoImp::class.java.simpleName
     override fun GetDataRep(
-        country: String,
         success: (DataResult) -> Unit,
         failure: (ApiError) -> Unit,
         treminate: () -> Unit

@@ -9,7 +9,7 @@ import io.reactivex.disposables.Disposable
 interface AppRepository {
 
     fun GetDataRep(
-        country:String,
+
         success:(DataResult)->Unit,
         failure: (ApiError)->Unit ={},
         treminate :() ->Unit ={}

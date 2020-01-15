@@ -3,9 +3,10 @@ package `in`.umbrella.cars.data.model
 import com.google.gson.annotations.SerializedName
 
 data class DataResult(
-    @SerializedName("data")
-    var celebrities :HashMap<String,celebrities>,
-    var cars :HashMap<String,cars>
+
+    var cars :HashMap<String,cars>,
+    var celebrities :HashMap<String,celebrities>
+
 )
 
 data class celebrities(
@@ -13,6 +14,7 @@ data class celebrities(
     var age: Int,
     var popularity: Int,
     var photo :String?=null
+
 
 )
 

@@ -2,7 +2,7 @@ package `in`.umbrella.cars.di.builder
 
 
 import `in`.umbrella.cars.di.qualifier.ViewModelKey
-import `in`.umbrella.cars.ui.HomeScreen.HomeViewModel
+import `in`.umbrella.cars.ui.homeScreen.HomeViewModel
 import androidx.lifecycle.ViewModel
 import dagger.Binds
 import dagger.Module
