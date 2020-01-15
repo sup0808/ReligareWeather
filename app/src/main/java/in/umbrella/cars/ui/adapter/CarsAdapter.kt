@@ -51,10 +51,6 @@ class CarsAdapter(internal var context: Context, rlist: MutableList<String>?, va
 
     }
 
-
-
-
-
     override fun getItemCount(): Int {
         return rlist!!.size
     }

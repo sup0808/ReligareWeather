@@ -50,10 +50,6 @@ class CelebritiesAdapter(internal var context: Context, rlist: MutableList<Strin
 
     }
 
-
-
-
-
     override fun getItemCount(): Int {
         return rlist!!.size
     }

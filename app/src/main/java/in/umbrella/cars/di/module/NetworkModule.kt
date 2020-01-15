@@ -2,6 +2,7 @@ package `in`.umbrella.cars.di.module
 
 
 import `in`.umbrella.cars.core.Config
+import `in`.umbrella.cars.data.db.AppDatabase
 import `in`.umbrella.cars.data.network.ApiService
 import `in`.umbrella.cars.data.repository.AppRepoImp
 import `in`.umbrella.cars.data.repository.AppRepository
@@ -75,8 +76,8 @@ class NetworkModule {
     }
 
     @Provides
-    fun provideRepository(apiService: ApiService): AppRepository {
-        return AppRepoImp(apiService)
+    fun provideRepository(apiService: ApiService,database: AppDatabase): AppRepository {
+        return AppRepoImp(apiService,database)
     }
 
 
